@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 360px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 40px 32px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 140px;
+    max-width: 45%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #202124;
+    margin-bottom: 10px;
+}
+
+p.subtitle {
+    font-size: 14px;
+    color: #5f6368;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    color: #202124;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: 14px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    border-color: #1a73e8;
+    box-shadow: 0 1px 3px rgba(26, 115, 232, 0.3);
+    outline: none;
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.login-button:hover {
+    background-color: #1669c1;
+    transform: translateY(-1px);
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #5f6368;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-container {
+        padding: 28px 20px;
+        border-radius: 6px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .logo img {
+        width: 120px;
+        max-width: 70%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p.subtitle {
+        font-size: 13px;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .login-button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 11px;
+        margin-top: 20px;
+    }
+}

