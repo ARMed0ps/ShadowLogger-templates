@@ -5,5 +5,5 @@ This repository contains templates for my project [ShadowLogger](https://github.
 
 ## Setup
 ### 1. Copy the desired template into ShadowLogger/Templates
-### 2. Add <Name>|<Path>|<Description> to templates.conf
+### 2. Add "(Name)|(Path)|(Description)" to templates.conf
 ### 3. You are ready to go
